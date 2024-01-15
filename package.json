@@ -1,5 +1,5 @@
 {
-  "name": "phaser",
+  "name": "@zep-us/phaser",
   "version": "3.70.0",
   "release": "Yotsuba",
   "description": "A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers.",
@@ -14,7 +14,7 @@
   "module": "./dist/phaser.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://photonstorm@github.com/photonstorm/phaser.git"
+    "url": "https://github.com/zep-us/phaser.git"
   },
   "scripts": {
     "beta": "npm publish --tag beta",
@@ -27,6 +27,7 @@
     "dist": "webpack --config config/webpack.dist.config.js",
     "distfb": "webpack --config config/webpack.fb.dist.config.js",
     "distfull": "npm run dist && npm run distfb",
+    "buildzep": "webpack --config config/webpack.zep.config.js",
     "plugin.cam3d": "webpack --config plugins/camera3d/webpack.config.js",
     "plugin.spine": "webpack --config plugins/spine/webpack.config.js",
     "plugin.spine.dist": "webpack --config plugins/spine/webpack.auto.dist.config.js",
